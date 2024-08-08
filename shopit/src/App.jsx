@@ -5,18 +5,34 @@ import Category from './component/category/Category';
 import Category2 from './component/category/Category2';
 import Services from './component/services/Services';
 import Banner from './component/Banner/Banner';
+import headphone from "/src/assets/hero/headphone.png";
+import smartwatch from "/src/assets/category/smartwatch2-removebg-preview.png";
+import Products from './component/Products/Products';
+import Partners from './component/Partners/Partners';
+import Footer from './component/Footer/Footer';
 
+const Bannerdata ={
+  discount : "30% OFF",
+  title : "Fine Smile",
+  Date : "1 AUG to 13 AUG",
+  Image: headphone,
+  title1 : "Air Solo Bass",
+  title2 : "Winter sale",
+  title4 : "this is the sale banner for headphones",
+  bgColor :"#f42c37",
 
-const BannerData ={
-  discount:"30% OFF",
-  tittle:"Fine Smile",
-  date:"1 AUG to 13 AUG",
-  image: headphone,
-  tittle2:"Air Solo Bass",
-  tittle3:"Winnter Sale",
-  tittle4:"this is the sale banner",
-  bgColor:"#f42c37",
-}
+};
+const Bannerdata2 ={
+  discount : "40% OFF",
+  title : "SMARTWATCH",
+  Date : "1 AUG to 28 AUG",
+  Image: smartwatch,
+  title1 : "BOAT",
+  title2 : "Winter sale",
+  title4 : "this is the sale banner for smartwatches",
+  bgColor :"#2dcc6f",
+
+};
 
 const App = () => {
   return (
@@ -26,7 +42,12 @@ const App = () => {
         <Category />
         <Category2 />
         <Services />
-        <Banner data={BannerData} />
+        <Banner data={Bannerdata}/>
+        <Products />
+        <Banner data={Bannerdata2}/>
+        <Partners />
+        <Footer />
+
     </div>
   )
 }
